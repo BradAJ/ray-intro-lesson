@@ -3,9 +3,9 @@ from ray.job_submission import JobSubmissionClient
 client = JobSubmissionClient("http://127.0.0.1:8265")
 
 kick_off_mc = (
-    # Clone ray. If ray is already present, don't clone again.
+    # Clone this repo.
     "git clone https://github.com/BradAJ/ray-intro-lesson;"
-    # Run the benchmark.
+    # Run the script.
     " python ray-intro-lesson/ray_monte_carlo_script.py"
     " --points 100_000_000 --jobs 10"
 )
